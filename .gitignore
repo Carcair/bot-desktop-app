@@ -20,3 +20,6 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
+.jshintrc
+#Electron-builder output
+/dist_electron

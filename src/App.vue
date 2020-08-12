@@ -5,16 +5,15 @@
 </template>
 
 <style>
+body {
+  margin: 0;
+}
 #app {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
     'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   height: 600px;
   width: 800px;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
+  margin: 0;
   padding: 0;
   background: linear-gradient(
     70deg,

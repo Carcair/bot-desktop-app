@@ -1,13 +1,17 @@
 <template>
   <div class="footer">
     <div></div>
-    <div class="buttonF">Add</div>
+    <div class="buttonF" v-on:click="setDialog">Add</div>
   </div>
 </template>
 
 <script>
+import { mapMutations } from 'vuex';
 export default {
   name: 'Footer',
+  methods: {
+    ...mapMutations(['setDialog']),
+  },
 };
 </script>
 

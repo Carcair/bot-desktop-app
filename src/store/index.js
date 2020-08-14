@@ -9,6 +9,7 @@ import Message from './modules/Message';
 import Schedules from './modules/Schedules';
 import Triggers from './modules/Triggers';
 import Reports from './modules/Reports';
+import Misc from './modules/Misc';
 
 Vue.use(Vuex);
 
@@ -19,5 +20,6 @@ export default new Vuex.Store({
     Schedules,
     Triggers,
     Reports,
+    Misc,
   },
 });

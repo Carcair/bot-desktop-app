@@ -17,13 +17,16 @@
       </table>
 
       <Footer></Footer>
+
+      <AddMessage v-if="getDialog"></AddMessage>
     </div>
   </div>
 </template>
 
 <script>
-import Navbar from '../components/navbar';
-import Footer from '../components/footer';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+import AddMessage from '../components/dialogs/AddMessage';
 import { mapGetters, mapActions } from 'vuex';
 
 export default {
@@ -31,11 +34,12 @@ export default {
   components: {
     Navbar,
     Footer,
+    AddMessage,
   },
   data() {
     return {};
   },
-  computed: mapGetters(['allMessages', 'token']),
+  computed: mapGetters(['allMessages', 'token', 'getDialog']),
   methods: {
     ...mapActions(['fetchMessages']),
   },

@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import NavButton from './buttons/navbarButtons';
+import NavButton from './buttons/NavbarButtons';
 export default {
   name: 'Navbar',
   components: {

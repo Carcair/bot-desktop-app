@@ -1,6 +1,7 @@
 const state = {
   token: '',
-  url: 'http://localhost/login',
+  // url: 'http://localhost/login',
+  url: 'https://praksans.dyndns.org:450/login',
 };
 
 const getters = {

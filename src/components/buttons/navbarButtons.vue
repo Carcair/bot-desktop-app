@@ -30,6 +30,7 @@ export default {
   text-align: center;
   background-color: cornflowerblue;
   box-shadow: 5px 10px #878e76;
+  -webkit-app-region: no-drag;
 }
 .button:hover {
   color: white;

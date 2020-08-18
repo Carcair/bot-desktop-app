@@ -1,7 +1,8 @@
 import axios from 'axios';
 
 // API endpoint
-const url = 'http://localhost/api/schedules';
+// const url = 'http://localhost/api/schedules';
+const url = 'https://praksans.dyndns.org:450/api/schedules/';
 
 const state = {
   schedules: [],

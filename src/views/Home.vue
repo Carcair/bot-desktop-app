@@ -68,7 +68,8 @@ export default {
   font-size: 17px;
   background: rgba(255, 255, 255, 0.5);
   padding: 25px 10px 0 10px;
-  border-radius: 10px;
+  border-radius: 25px 0 25px 0;
+  -webkit-app-region: no-drag;
 }
 
 #form > label {
@@ -81,9 +82,13 @@ export default {
   width: 150px;
   font-size: 18px;
   border: none;
+  background-color: #878e76;
+  color: wheat;
 }
 #form > input:focus {
   outline: none;
+  background-color: wheat;
+  color: #878e76;
 }
 
 #button {

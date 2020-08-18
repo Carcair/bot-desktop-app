@@ -1,7 +1,8 @@
 import axios from 'axios';
 
 // API endpoint
-const url = 'http://localhost/api/triggers';
+// const url = 'http://localhost/api/triggers';
+const url = 'https://praksans.dyndns.org:450/api/triggers/';
 
 const state = {
   triggers: [],

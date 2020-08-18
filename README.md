@@ -1,24 +1,22 @@
 # bot-desktop-app
 
 ## Project setup
+
 ```
 npm install
 ```
 
 ### Compiles and hot-reloads for development
+
 ```
-npm run serve
+npm run electron:serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
+### App use
 
-### Lints and fixes files
-```
-npm run lint
-```
+Login as:
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+```
+Username: admin
+Password: admin
+```

@@ -1,6 +1,6 @@
 <template>
   <div class="addM">
-    <div class="esc">x</div>
+    <div class="esc" v-on:click="setDialog">x</div>
     <form class="sendM">
       <label for="title">Title:</label>
       <input type="text" name="title" id="title" />
@@ -14,8 +14,12 @@
 </template>
 
 <script>
+import { mapMutations } from 'vuex';
 export default {
   name: 'AddMessage',
+  methods: {
+    ...mapMutations(['setDialog']),
+  },
 };
 </script>
 
@@ -30,18 +34,21 @@ export default {
   text-align: center;
 }
 .esc:hover {
-  color: crimson;
+  color: white;
+  font-weight: bold;
   cursor: pointer;
 }
 
 .addM {
   width: 400px;
-  height: 280px;
-  background-color: wheat;
+  height: 350px;
+  background-color: rgba(81, 81, 110, 0.788);
   position: absolute;
   top: 125px;
   left: 200px;
   padding: 25px;
+  border-radius: 25px 0 25px 0;
+  -webkit-app-region: no-drag;
 }
 
 .sendM {
@@ -67,19 +74,19 @@ export default {
   cursor: pointer;
 }
 
-textarea {
+#text {
   resize: none;
 }
 
-input,
-textarea {
+#title,
+#text {
   background-color: rgba(0, 0, 0, 0.4);
   color: wheat;
   outline: none;
   border: none;
 }
-input:focus,
-textarea:focus {
+#title:focus,
+#text:focus {
   background-color: wheat;
   color: rgba(0, 0, 0, 0.4);
 }

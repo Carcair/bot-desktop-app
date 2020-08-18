@@ -1,7 +1,8 @@
 import axios from 'axios';
 
 // API endpoint
-const url = 'http://localhost/api/messages';
+// const url = 'http://localhost/api/messages';
+const url = 'https://praksans.dyndns.org:450/api/messages/';
 
 const state = {
   messages: [],

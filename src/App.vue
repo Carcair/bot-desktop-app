@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" style="-webkit-app-region: drag">
     <router-view />
   </div>
 </template>
@@ -7,6 +7,9 @@
 <style>
 body {
   margin: 0;
+}
+::-webkit-scrollbar {
+  display: none;
 }
 #app {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',

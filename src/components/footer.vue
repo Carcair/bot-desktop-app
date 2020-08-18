@@ -29,6 +29,7 @@ export default {
   text-align: center;
   background-color: rgba(241, 246, 247, 0.7);
   box-shadow: 5px 10px #878e76;
+  -webkit-app-region: no-drag;
 }
 .buttonF:hover {
   color: white;
